@@ -79,19 +79,29 @@ header nav .nav-sections li {
   border-top: 1px solid rgb(25 47 91 / 12%);
 }
 
-/* ───── Top utility bar ───── */
+/*
+  ───── Top utility bar ─────
+  Both groups (social + utility) right-aligned on a single row, vertically centered.
+*/
 header nav .nav-tools {
   order: 1;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  gap: 12px;
+  justify-content: flex-end;
   padding: 10px 0;
   font-size: 14px;
   font-weight: 500;
   text-transform: uppercase;
   line-height: 14px;
+}
+
+/* The default-content-wrapper holds both UL groups; lay them out as a single right-aligned row */
+header nav .nav-tools .default-content-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 24px;
 }
 
 header nav .nav-tools ul {
@@ -103,7 +113,7 @@ header nav .nav-tools ul {
   flex-wrap: wrap;
 }
 
-/* Social icons (left side) */
+/* Social icons */
 header nav .nav-tools .nav-social {
   gap: 12px;
 }
