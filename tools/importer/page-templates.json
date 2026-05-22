@@ -1,0 +1,55 @@
+{
+  "metadata": {
+    "projectType": "doc"
+  },
+  "templates": [
+    {
+      "name": "homepage",
+      "urls": [
+        "https://rouxbeauty.com/"
+      ],
+      "description": "Homepage of rouxbeauty.com — landing page with hero, product features, brand storytelling, and footer-area content",
+      "blocks": [
+        {
+          "name": "carousel-hero",
+          "instances": [
+            "#home-slider"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "home-slider",
+          "name": "Home Slider",
+          "selector": "#home-slider",
+          "style": null,
+          "blocks": [
+            "carousel-hero"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "social-feed",
+          "name": "Social & Beautiful",
+          "selector": "#social-feed",
+          "style": "light",
+          "blocks": [],
+          "defaultContent": [
+            "#social-feed h2",
+            "#social-feed p"
+          ]
+        },
+        {
+          "id": "weightless-oils-banner",
+          "name": "Weightless Oils Banner",
+          "selector": "#weightless-oils-banner",
+          "style": "light",
+          "blocks": [],
+          "defaultContent": [
+            "#weightless-oils-banner a"
+          ]
+        }
+      ]
+    }
+  ]
+}

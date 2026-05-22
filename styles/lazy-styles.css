@@ -1,1 +1,54 @@
 /* add global styles that can be loaded post LCP here */
+
+/* Below-the-fold default content tweaks for rouxbeauty.com social & banner sections */
+
+/* Centered headings within default-content sections (mimics rouxbeauty.com "SOCIAL & BEAUTIFUL"
+   heading with horizontal rules on each side) */
+main > .section.light h2,
+main > .section.highlight h2 {
+  text-align: center;
+}
+
+main > .section.light h2::before,
+main > .section.light h2::after,
+main > .section.highlight h2::before,
+main > .section.highlight h2::after {
+  content: '';
+  display: inline-block;
+  width: 80px;
+  height: 1px;
+  vertical-align: middle;
+  margin: 0 18px;
+  background-color: var(--brand-secondary);
+  opacity: 0.6;
+}
+
+@media (width >= 600px) {
+  main > .section.light h2::before,
+  main > .section.light h2::after,
+  main > .section.highlight h2::before,
+  main > .section.highlight h2::after {
+    width: 140px;
+  }
+}
+
+/* Paragraphs centered within these sections */
+main > .section.light p,
+main > .section.highlight p {
+  text-align: center;
+  margin-top: 18px;
+}
+
+/* Banner-style linked image (Weightless Oils) — full-width, no surrounding chrome */
+main > .section.light p > a:has(picture),
+main > .section.light p > a:has(img) {
+  display: block;
+  line-height: 0;
+}
+
+main > .section.light p > a:has(picture) img,
+main > .section.light p > a:has(img) img {
+  width: 100%;
+  height: auto;
+  display: block;
+}

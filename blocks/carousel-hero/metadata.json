@@ -1,0 +1,41 @@
+{
+  "variantName": "carousel-hero",
+  "baseBlock": "carousel",
+  "version": "1.0.0",
+  "created": "2026-05-21T15:50:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://rouxbeauty.com/",
+    "originPage": "homepage",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "image",
+    "density": "spacious",
+    "purpose": "hero",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + CTA button",
+    "buttonCount": 1,
+    "imageCount": 1,
+    "slideCount": 6,
+    "notes": "Each slide is a full-bleed promotional composite image with a single 'Learn More' CTA. Marketing copy is baked into the image artwork; no separate per-slide heading/description text."
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "Homepage / top-of-page hero rotators",
+      "Promotional landing pages with multiple campaign slides",
+      "Image-led carousels where each slide has a single CTA"
+    ],
+    "notSuitableFor": [
+      "Carousels with rich per-slide text (heading + paragraph) over solid backgrounds - use base 'carousel' or another variant",
+      "Inline mid-page galleries with thumbnail navigation",
+      "Single-slide hero banners - use 'hero' instead"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-21T15:50:00.000Z"
+  }
+}
