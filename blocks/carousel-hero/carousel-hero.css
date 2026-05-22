@@ -29,7 +29,10 @@
   justify-content: flex-end;
   position: relative;
   width: 100%;
-  min-height: min(56vw, calc(100dvh - var(--header-height)));
+
+  /* Source images are 1980x765 (≈2.59:1) — height = 765/1980 ≈ 38.64% of width */
+  aspect-ratio: 1980 / 765;
+  min-height: 0;
 }
 
 .carousel-hero .carousel-hero-slide:has(.carousel-hero-slide-content[data-align='center']) {
@@ -178,10 +181,6 @@
 }
 
 @media (width >= 600px) {
-  .carousel-hero .carousel-hero-slide {
-    min-height: min(50vw, calc(100dvh - var(--header-height)));
-  }
-
   .carousel-hero .carousel-hero-navigation-buttons {
     left: 24px;
     right: 24px;
